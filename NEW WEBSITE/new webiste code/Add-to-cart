@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto Coffee & Tea</title>
+    <link rel="stylesheet" href="new website.css">
+    <style>
+        .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+        .navbar a .navbar a {
+        display: block;
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 1.5rem 2rem;
+    }
+
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">Order</a>
+        </nav>
+        <a href="Add-to-cart.html" target="_blank" class="btn">Add to Cart</a>
+    </header>
+
+        
+    <section class="menu" id="menu">
+        <h1 class="heading">Brew<span>Coffee</span></h1>
+
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="new website pic/Matcha coffee.png" alt="">
+                <div class="content">
+                    <h3>Matcha coffee</h3>
+                    <p>The striking green of matcha combined with the rich taste of our coffee creates a unique ‘zirty’ look, offering
+                         an unconventional and energizing beverage that wakes up your senses.</p>
+                    <span>₱155</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="new website pic/espresso_coffee.png" alt="">
+                <div class="content">
+                    <h3>Italian espresso</h3>
+                    <p>An Italian espresso, brewed at 9 bars of pressure with 91ºC water, offers a medium-dark roast 
+                        with notes of dark chocolate, salted caramel, and a smoky finish.</p>
+                    <span>₱120</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="new website pic/Americano (2).png" alt="">
+                <div class="content">
+                    <h3>Americano</h3>
+                    <p>A shot of espresso with a deep-tan crema that’s smooth 
+                        and robust and perfectly preserved for your enjoyment.</p>
+                    <span>₱120</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="new website pic/amaretto_macchiato.png" alt="">
+                <div class="content">
+                    <h3>Amaretto macchiato</h3>
+                    <p>A little more fun with a Macchiato that’s made with a little extra kick of Amaretto. This tasty and quick treat can be made in under a
+                         minute and is guaranteed to leave a smile that will last for hours.</p>
+                    <span>₱120</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="new website pic/Ube Coffee.png" alt="">
+                <div class="content">
+                    <h3>Ube Coffee</h3>
+                    <p>Revisit childhood flavors, now refined for the adults. This drink mixes the mature, bold taste of coffee with the playful 
+                        sweetness of ube, creating a sophisticated, creamy beverage perfect for any grownup.</p>
+                    <span>₱130</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="new website pic/Coffee moca.png" alt="">
+                <div class="content">
+                    <h3>Coffee moca</h3>
+                    <p>The mixture of chocolate and coffee that created this tall, 
+                        dark and heavenly drink that has won over the hearts of many.</p>
+                    <span>₱129</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Special<span>Tea</span></h1>
+    
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="new website pic/White tea.png" alt="">
+                <div class="content">
+                    <h3>White tea</h3>
+                    <p>Light and delicate, White Tea offers a smooth, subtle flavor that’s perfect for a calming moment.</p>
+                    <span>₱80</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Yellow tea.png" alt="">
+                <div class="content">
+                    <h3>Yellow Tea</h3>
+                    <p>Rare and special, Yellow Tea has a mellow, slightly sweet taste with a soft, floral aroma.</p>
+                    <span>₱75</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Lemon tea.png" alt="">
+                <div class="content">
+                    <h3>Lemon tea</h3>
+                    <p>Bright and refreshing, Lemon Tea brings a zesty citrus twist that energizes and uplifts.</p>
+                    <span>₱80</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Green tea.png" alt="">
+                <div class="content">
+                    <h3>Green tea</h3>
+                    <p>Crisp and earthy, Green Tea is packed with freshness and a natural, soothing taste.</p>
+                    <span>₱90</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Chai tea.png" alt="">
+                <div class="content">
+                    <h3>Chai tea</h3>
+                    <p>Warm and spicy, Chai Tea is rich in bold flavors with a hint of sweetness—comfort in a cup..</p>
+                    <span>₱115</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Matcha tea.png" alt="">
+                <div class="content">
+                    <h3>Matcha tea</h3>
+                    <p>Vibrant and smooth, Matcha Tea offers a bold, energizing flavor with a creamy finish.</p>
+                    <span>₱115</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Crispi<span>Pastries</span></h1>
+    
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="new website pic/ham and cheese croissant.png" alt="">
+                <div class="content">
+                    <h3>Ham and Cheese Croissant</h3>
+                    <p>A flaky croissant filled with smoky ham and creamy cheese, lightly brushed with egg for a golden finish.</p>
+                    <span>₱₱90</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/puff pastry sausage roll2.png" alt="">
+                <div class="content">
+                    <h3>Puff Pastry Sausage Roll</h3>
+                    <p>Juicy chicken sausage wrapped in a cheesy egg blanket, creating a perfect savory snack.</p>
+                    <span>₱₱120</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/pesto roll.png" alt="">
+                <div class="content">
+                    <h3>Pesto Roll</h3>
+                    <p>A delicate puff pastry filled with earthy button mushrooms, aromatic white onions, ham, and a touch of parmesan for a cheesy finish.</p>
+                    <span>₱110</span>
+                </div>
+            </a>
+            
+            <a href="#" class="box">
+                <img src="new website pic/Pain-au-Chocolat.png" alt="">
+                <div class="content">
+                    <h3>Pain-au-Chocolate</h3>
+                    <p>Indulgent dark chocolate folded into layers of rich, 
+                        buttery pastry, making every bite sinfully delicious.</p>
+                    <span>₱110</span>
+                </div>
+            </a>
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Fluffi<span>Buns</span></h1>
+    
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="new website pic/Blueberyy Brioche.png" alt="">
+                <div class="content">
+                    <h3>Blueberyy Brioche</h3>
+                    <p>Soft and light brioche packed with a burst of blueberry filling and a hint of vanilla, offering a fruity indulgence.</p>
+                    <span>₱85</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Tuna Bun.png" alt="">
+                <div class="content">
+                    <h3>Tuna Bun</h3>
+                    <p>Fluffy bun filled with rich tuna flakes and sweet corn, brought together with creamy Japanese mayo.</p>
+                    <span>₱75</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Corned beef pandesal.png" alt="">
+                <div class="content">
+                    <h3>Corned Beef Pandesal</h3>
+                    <p>Soft and freshly baked, our Corned Beef Pandesal is stuffed with savory corned beef, 
+                        making it the perfect snack to enjoy with your favorite tea!</p>
+                    <span>₱75</span>
+                </div>
+            </a>
+            
+            <a href="#" class="box">
+                <img src="new website pic/Ube-Pandesal1.png" alt="">
+                <div class="content">
+                    <h3>Ube Pandesal</h3>
+                    <p>Soft pandesal bread infused with sweet and earthy ube paste, elevated by melted butter.</p>
+                    <span>₱75</span>
+                </div>
+            </a>
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Spongi<span>CAKES</span></h1>
+    
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="new website pic/Chocolate Yakigashi.png" alt="">
+                <div class="content">
+                    <h3>Chocolate Yakigashi</h3>
+                    <p>A sweet chocolate treat that’s soft, moist, and melts in the mouth, a true testament to refined Japanese baking.</p>
+                    <span>₱99</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Banana Yakigasho.png" alt="">
+                <div class="content">
+                    <h3>Banana Yakigashi</h3>
+                    <p>Soft and moist baked goodness infused with the natural sweetness of banana puree.</p>
+                    <span>₱99</span>
+                </div>
+            </a>
+    
+            <a href="#" class="box">
+                <img src="new website pic/Chocolate Cheesecake.png" alt="">
+                <div class="content">
+                    <h3>Chocolate Cheesecake</h3>
+                    <p>A combination of velvety cream cheese and dark chocolate on top of a crunchy graham base, an absolute treat for dessert lovers.</p>
+                    <span>₱99</span>
+                </div>
+            </a>
+            
+            <a href="#" class="box">
+                <img src="new website pic/Matcha Cake.png" alt="">
+                <div class="content">
+                    <h3>Matcha Cake</h3>
+                    <p>A soft, moist cake infused with the rich, earthy flavor of matcha. Perfectly sweet with a hint of
+                         bitterness, it pairs beautifully with any tea.</p>
+                    <span>₱110</span>
+                </div>
+            </a>
+    </section>
+
+    <script src="newwebsitejs.js"></script>
+</body>
+</html>

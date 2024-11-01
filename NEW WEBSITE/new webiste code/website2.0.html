@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto Coffee & Tea </title>
+    <link rel="icon" href= 
+    "new website pic/real-logo-removebg-preview.png"
+     >
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="new website.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+         <div class="Simage">
+              <img src="new website pic/real-logo-removebg-preview2.png" class="Simage">
+            </div>
+        <a href="#" class="logo">Kanto Coffee & Tea</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">Order</a>
+        </nav>
+        
+    </header>
+</div>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>mura na medyo masarap pa</h3>
+                <a href="#book" class="btn">BUY NOW!</a>
+            </div>
+
+            <div class="image">
+                <img src="new webiste code/new website pic/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="new website pic/home-img-1.png" alt="">
+            <img src="new website pic/home-img-2.png">
+            <img src="new website pic/home-img-3.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading">about us <span>why choose us</span></h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="new website pic/about-img-1.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">what's make our coffee & tea special!</h3>
+                <p>At Kanto Coffee & Tea, we don’t just make coffee—we create moments. Our secret? Freshness. Every cup is brewed just for you, full of rich flavor and smooth texture. Whether you need a morning boost or an afternoon treat, our coffee will hit the spot every time.</p>
+                
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="new website pic/about-icon-1.png" alt="">
+                        <h3>quality coffee & tea</h3>
+                    </div>
+                   
+                    <div class="icons">
+                        <img src="new website pic/about-icon-3.png" alt="">
+                        <h3>free delivery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading1">BEST<br><span>SELLING</span></br></h1>
+        <h2 class="heading2">Coffee</h2>
+
+
+        <div class="box-container">
+            <a class="box">
+                <img src="new website pic/Matcha coffee.png" >
+                <div class="content">
+                    <h3>Matcha coffee</h3>
+                    <p>The striking green of matcha combined with the rich taste of our coffee creates a unique ‘zirty’ look, offering
+                        an unconventional and energizing beverage that wakes up your senses.</p>
+                   
+                    </div>
+                         
+             </a>
+             
+<!-- Modal Structure -->
+<div id="modalMatcha" class="modal">
+    <div class="modal-content">
+        <img src="new website pic/Matcha coffee.png" style="width: 240px; height: auto;  top: 140px;"; class="floating-image">
+        <span class="close">&times;</span>
+        <h2>Matcha Coffee</h2>
+        
+        
+        <!-- Size and Price Options -->
+        <div class="size-options">
+            <div class="size-option">
+                <label for="size4oz">demi (3oz)</label>
+                <span>₱59</span>
+            </div>
+            <div class="size-option">
+                <label for="size11oz">grande</label>
+                <span>₱79</span>
+            </div>
+            <div class="size-option">
+                <label for="size15oz">venti</label>
+                <span>₱89</span>
+            </div>
+        </div>
+    </div>
+</div>
+  
+ <!-- Italian Espresso Item -->
+ <a href="#" class="box" id="italianEspresso" onclick="openModal('modalEspresso'); return false;">
+    <img src="new website pic/espresso_coffee.png" alt="Italian Espresso">
+    <div class="content">
+        <h3>Italian Espresso</h3>
+        <p>An Italian espresso, brewed at 9 bars of pressure with 91ºC water, offers a medium-dark roast with notes of dark chocolate, salted caramel, and a smoky finish.</p>
+       
+    </div>
+</a>
+
+
+          <!-- Italian Espresso Modal -->
+<div id="modalEspresso" class="modal">
+    <div class="modal-content">
+        <img src="new website pic/espresso_coffee.png"  style="width: 120px; height: auto;  top: 250px;" class="floating-image">
+        <span class="close" onclick="closeModal('modalEspresso')">&times;</span>
+        <h2>Italian Espresso</h2>
+
+        <div class="size-options">
+            <div class="size-option">
+                <label>tall</label>
+                <span>₱59</span>
+            </div>
+            <div class="size-option">
+                <label>grande</label>
+                <span>₱79</span>
+            </div>
+            <div class="size-option">
+                <label>venti</label>
+                <span>₱89</span>
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+            <div class="box-container">
+    <!-- Americano Item -->
+    <a href="#" class="box" id="americano" onclick="openModal('modalAmericano'); return false;">
+        <img src="new website pic/Americano (2).png" alt="Americano">
+        <div class="content">
+            <h3>Americano</h3>
+            <p>A shot of espresso with a deep-tan crema that’s smooth and robust and perfectly preserved for your enjoyment.</p>
+           
+        </div>   
+    </a>
+
+    <!-- Amaretto Macchiato Item -->
+    <a  class="box" id="amarettoMacchiato" onclick="openModal('modalAmaretto'); return false;">
+        <img src="new website pic/amaretto_macchiato.png" alt="Amaretto Macchiato">
+        <div class="content">
+            <h3>Amaretto Macchiato</h3>
+            <p>A Macchiato with a little extra kick of Amaretto, creating a quick treat guaranteed to leave a smile that lasts for hours.</p>
+          
+        </div>
+    </a>
+
+    <!-- Ube Coffee Item -->
+    <a href="#" class="box" id="ubeCoffee" onclick="openModal('modalUbe'); return false;">
+        <img src="new website pic/Ube Coffee.png" alt="Ube Coffee">
+        <div class="content">
+            <h3>Ube Coffee</h3>
+            <p>Revisit childhood flavors with a mature twist. This drink blends coffee with the playful sweetness of ube, creating a creamy beverage.</p>
+          
+        </div>
+    </a>
+
+    <!-- Coffee Mocha Item -->
+    <a href="#" class="box" id="coffeeMocha" onclick="openModal('modalMocha'); return false;">
+        <img src="new website pic/Coffee moca.png" alt="Coffee Mocha">
+        <div class="content">
+            <h3>Coffee Mocha</h3>
+            <p>A delightful mix of chocolate and coffee, creating a rich, dark, and heavenly drink beloved by many.</p>
+           
+        </div>
+    </a>
+</div>
+
+<!-- Modals -->
+<!-- Americano Modal -->
+<div id="modalAmericano" class="modal">
+    <div class="modal-content">
+        <img src="new website pic/Americano (2).png" style="width: 200px; height: auto;  top: 190px;" class="floating-image">
+        <span class="close" onclick="closeModal('modalAmericano')">&times;</span>
+        <h2>Americano</h2>
+      
+        <div class="size-options">
+            <div class="size-option">
+                <label>demi (3oz)</label>
+                <span>₱29</span>
+            </div>
+            <div class="size-option">
+                <label>grande</label>
+                <span>₱29</span>
+            </div>
+            <div class="size-option">
+                <label>venti</label>
+                <span>₱49</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Amaretto Macchiato Modal -->
+<div id="modalAmaretto" class="modal">
+    <div class="modal-content">
+        <img src="new website pic/amaretto_macchiato.png" style="width: 120px; height: auto;  top: 250px;" class="floating-image">
+        <span class="close" onclick="closeModal('modalAmaretto')">&times;</span>
+        <h2>Amaretto Macchiato</h2>
+       
+        <div class="size-options">
+            <div class="size-option">
+                <label>tall</label>
+                <span>₱59</span>
+            </div>
+            <div class="size-option">
+                <label>grande</label>
+                <span>₱79</span>
+            </div>
+            <div class="size-option">
+                <label>venti</label>
+                <span>₱89</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ube Coffee Modal -->
+<div id="modalUbe" class="modal">
+    <div class="modal-content">
+        <img src="new website pic/Ube Coffee.png" style="width: 190px; height: auto;  top: 200px;" class="floating-image">
+        <span class="close" onclick="closeModal('modalUbe')">&times;</span>
+        <h2>Ube Coffee</h2>
+     
+        <div class="size-options">
+            <div class="size-option">
+                <label>demi (3oz)</label>
+                <span>₱49</span>
+            </div>
+            <div class="size-option">
+                <label>grande</label>
+                <span>₱69</span>
+            </div>
+            <div class="size-option">
+                <label>venti</label>
+                <span>₱89</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Coffee Mocha Modal -->
+<div id="modalMocha" class="modal">
+    <div class="modal-content">
+        <img src="new website pic/Coffee moca.png" style="width: 210px; height: auto;  top: 180px;" class="floating-image">
+        <span class="close" onclick="closeModal('modalMocha')">&times;</span>
+        <h2>Coffee Mocha</h2>
+       
+        <div class="size-options">
+            <div class="size-option">
+                <label>demi (3oz)</label>
+                <span>₱49</span>
+            </div>
+            <div class="size-option">
+                <label>grande</label>
+                <span>₱79</span>
+            </div>
+            <div class="size-option">
+                <label>venti</label>
+                <span>₱89</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Special<span>Tea</span></h1>
+    
+        <div class="box-container">
+            <!-- White Tea -->
+<a class="box" onclick="openModal('modalWhiteTea')">
+    <img src="new website pic/White tea.png" alt="">
+    <div class="content">
+        <h3>White tea</h3>
+        <p>Light and delicate, White Tea offers a smooth, subtle flavor that’s perfect for a calming moment.</p>
+        
+    </div>
+</a>
+
+<div id="modalWhiteTea" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalWhiteTea')">&times;</span>
+        <h2>White Tea</h2>
+        
+        <div class="size-options">
+            <div class="size-option"><label>demi (3oz)</label><span>₱50</span></div>
+            <div class="size-option"><label>grande</label><span>₱70</span></div>
+            <div class="size-option"><label>venti</label><span>₱90</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat for other tea items -->
+
+<!-- Yellow Tea -->
+<a class="box" onclick="openModal('modalYellowTea')">
+    <img src="new website pic/Yellow tea.png" alt="">
+    <div class="content">
+        <h3>Yellow Tea</h3>
+        <p>Rare and special, Yellow Tea has a mellow, slightly sweet taste with a soft, floral aroma.</p>
+    
+    </div>
+</a>
+
+<div id="modalYellowTea" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalYellowTea')">&times;</span>
+        <h2>Yellow Tea</h2>
+       
+        <div class="size-options">
+            <div class="size-option"><label>demi (3oz)</label><span>₱55</span></div>
+            <div class="size-option"><label>grande</label><span>₱75</span></div>
+            <div class="size-option"><label>venti</label><span>₱95</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Continue similarly for Lemon Tea, Green Tea, Chai Tea, Matcha Tea, etc. -->
+
+    
+            <!-- Lemon Tea -->
+<a class="box" onclick="openModal('modalLemonTea')">
+    <img src="new website pic/Lemon tea.png" alt="">
+    <div class="content">
+        <h3>Lemon tea</h3>
+        <p>Bright and refreshing, Lemon Tea brings a zesty citrus twist that energizes and uplifts.</p>
+      
+    </div>
+</a>
+
+<div id="modalLemonTea" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalLemonTea')">&times;</span>
+        <h2>Lemon Tea</h2>
+       
+        <div class="size-options">
+            <div class="size-option"><label>demi (3oz)</label><span>₱50</span></div>
+            <div class="size-option"><label>grande</label><span>₱70</span></div>
+            <div class="size-option"><label>venti</label><span>₱90</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Green Tea -->
+<a class="box" onclick="openModal('modalGreenTea')">
+    <img src="new website pic/Green tea.png" alt="">
+    <div class="content">
+        <h3>Green tea</h3>
+        <p>Crisp and earthy, Green Tea is packed with freshness and a natural, soothing taste.</p>
+       
+    </div>
+</a>
+
+<div id="modalGreenTea" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalGreenTea')">&times;</span>
+        <h2>Green Tea</h2>
+        
+        <div class="size-options">
+            <div class="size-option"><label>demi (3oz)</label><span>₱55</span></div>
+            <div class="size-option"><label>grande</label><span>₱75</span></div>
+            <div class="size-option"><label>venti</label><span>₱95</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Chai Tea -->
+<a class="box" onclick="openModal('modalChaiTea')">
+    <img src="new website pic/Chai tea.png" alt="">
+    <div class="content">
+        <h3>Chai tea</h3>
+        <p>Warm and spicy, Chai Tea is rich in bold flavors with a hint of sweetness—comfort in a cup.</p>
+       
+    </div>
+</a>
+
+<div id="modalChaiTea" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalChaiTea')">&times;</span>
+        <h2>Chai Tea</h2>
+       
+        <div class="size-options">
+            <div class="size-option"><label>demi (3oz)</label><span>₱60</span></div>
+            <div class="size-option"><label>grande</label><span>₱80</span></div>
+            <div class="size-option"><label>venti</label><span>₱100</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Matcha Tea -->
+<a class="box" onclick="openModal('modalMatchaTea')">
+    <img src="new website pic/Matcha tea.png" alt="">
+    <div class="content">
+        <h3>Matcha tea</h3>
+        <p>Vibrant and smooth, Matcha Tea offers a bold, energizing flavor with a creamy finish.</p>
+       
+    </div>
+</a>
+
+<div id="modalMatchaTea" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalMatchaTea')">&times;</span>
+        <h2>Matcha Tea</h2>
+      
+        <div class="size-options">
+            <div class="size-option"><label>demi (3oz)</label><span>₱65</span></div>
+            <div class="size-option"><label>grande</label><span>₱85</span></div>
+            <div class="size-option"><label>venti</label><span>₱105</span></div>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Crispi<span>Pastries</span></h1>
+    
+        <div class="box-container">
+           <!-- Ham and Cheese Croissant -->
+<a class="box" onclick="openModal('modalHamCheese')">
+    <img src="new website pic/ham and cheese croissant.png" alt="">
+    <div class="content">
+        <h3>Ham and Cheese Croissant</h3>
+        <p>A flaky croissant filled with smoky ham and creamy cheese, lightly brushed with egg for a golden finish.</p>
+       
+    </div>
+</a>
+
+<div id="modalHamCheese" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalHamCheese')">&times;</span>
+        <h2>Ham and Cheese Croissant</h2>
+       
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱59</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Puff Pastry Sausage Roll -->
+<a class="box" onclick="openModal('modalSausageRoll')">
+    <img src="new website pic/puff pastry sausage roll2.png" alt="">
+    <div class="content">
+        <h3>Puff Pastry Sausage Roll</h3>
+        <p>Juicy chicken sausage wrapped in a cheesy egg blanket, creating a perfect savory snack.</p>
+       
+    </div>
+</a>
+
+<div id="modalSausageRoll" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalSausageRoll')">&times;</span>
+        <h2>Puff Pastry Sausage Roll</h2>
+       
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱59</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Pesto Roll -->
+<a class="box" onclick="openModal('modalPestoRoll')">
+    <img src="new website pic/pesto roll.png" alt="">
+    <div class="content">
+        <h3>Pesto Roll</h3>
+        <p>A delicate puff pastry filled with earthy button mushrooms, aromatic white onions, ham, and a touch of parmesan for a cheesy finish.</p>
+       
+    </div>
+</a>
+
+<div id="modalPestoRoll" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalPestoRoll')">&times;</span>
+        <h2>Pesto Roll</h2>
+       
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱50</span></div>
+        </div>
+    </div>
+</div>
+
+            
+            <!-- Pain-au-Chocolat -->
+<a class="box" onclick="openModal('modalPainAuChocolat')">
+    <img src="new website pic/Pain-au-Chocolat.png" alt="">
+    <div class="content">
+        <h3>Pain-au-Chocolat</h3>
+        <p>Indulgent dark chocolate folded into layers of rich, buttery pastry, making every bite sinfully delicious.</p>
+       
+    </div>
+</a>
+
+<div id="modalPainAuChocolat" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalPainAuChocolat')">&times;</span>
+        <h2>Pain-au-Chocolat</h2>
+      
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱59</span></div>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Fluffi<span>Buns</span></h1>
+    
+        <div class="box-container">
+           <!-- Blueberry Brioche -->
+<a class="box" onclick="openModal('modalBlueberryBrioche')">
+    <img src="new website pic/Blueberyy Brioche.png" alt="">
+    <div class="content">
+        <h3>Blueberry Brioche</h3>
+        <p>Soft and light brioche packed with a burst of blueberry filling and a hint of vanilla, offering a fruity indulgence.</p>
+       
+    </div>
+</a>
+<div id="modalBlueberryBrioche" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalBlueberryBrioche')">&times;</span>
+        <h2>Blueberry Brioche</h2>
+      
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱49</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Tuna Bun -->
+<a class="box" onclick="openModal('modalTunaBun')">
+    <img src="new website pic/Tuna Bun.png" alt="">
+    <div class="content">
+        <h3>Tuna Bun</h3>
+        <p>Fluffy bun filled with rich tuna flakes and sweet corn, brought together with creamy Japanese mayo.</p>
+      
+    </div>
+</a>
+<div id="modalTunaBun" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalTunaBun')">&times;</span>
+        <h2>Tuna Bun</h2>
+     
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱35</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Corned Beef Pandesal -->
+<a class="box" onclick="openModal('modalCornedBeefPandesal')">
+    <img src="new website pic/Corned beef pandesal.png" alt="">
+    <div class="content">
+        <h3>Corned Beef Pandesal</h3>
+        <p>Soft and freshly baked, our Corned Beef Pandesal is stuffed with savory corned beef, making it the perfect snack to enjoy with your favorite tea!</p>
+       
+    </div>
+</a>
+<div id="modalCornedBeefPandesal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalCornedBeefPandesal')">&times;</span>
+        <h2>Corned Beef Pandesal</h2>
+    
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱30</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Ube Pandesal -->
+<a class="box" onclick="openModal('modalUbePandesal')">
+    <img src="new website pic/Ube-Pandesal1.png" alt="">
+    <div class="content">
+        <h3>Ube Pandesal</h3>
+        <p>Soft pandesal bread infused with sweet and earthy ube paste, elevated by melted butter.</p>
+       
+    </div>
+</a>
+<div id="modalUbePandesal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalUbePandesal')">&times;</span>
+        <h2>Ube Pandesal</h2>
+       
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱25</span></div>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Spongi<span>CAKES</span></h1>
+    
+        <div class="box-container">
+            <!-- Chocolate Yakigashi -->
+<a class="box" onclick="openModal('modalChocolateYakigashi')">
+    <img src="new website pic/Chocolate Yakigashi.png" alt="">
+    <div class="content">
+        <h3>Chocolate Yakigashi</h3>
+        <p>A sweet chocolate treat that’s soft, moist, and melts in the mouth, a true testament to refined Japanese baking.</p>
+    </div>
+</a>
+<div id="modalChocolateYakigashi" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalChocolateYakigashi')">&times;</span>
+        <h2>Chocolate Yakigashi</h2>
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱35</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Banana Yakigashi -->
+<a class="box" onclick="openModal('modalBananaYakigashi')">
+    <img src="new website pic/Banana Yakigasho.png" alt="">
+    <div class="content">
+        <h3>Banana Yakigashi</h3>
+        <p>Soft and moist baked goodness infused with the natural sweetness of banana puree.</p>
+    </div>
+</a>
+<div id="modalBananaYakigashi" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalBananaYakigashi')">&times;</span>
+        <h2>Banana Yakigashi</h2>
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱35</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Chocolate Cheesecake -->
+<a class="box" onclick="openModal('modalChocolateCheesecake')">
+    <img src="new website pic/Chocolate Cheesecake.png" alt="">
+    <div class="content">
+        <h3>Chocolate Cheesecake</h3>
+        <p>A combination of velvety cream cheese and dark chocolate on top of a crunchy graham base, an absolute treat for dessert lovers.</p>
+    </div>
+</a>
+<div id="modalChocolateCheesecake" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalChocolateCheesecake')">&times;</span>
+        <h2>Chocolate Cheesecake</h2>
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱35</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Matcha Cake -->
+<a class="box" onclick="openModal('modalMatchaCake')">
+    <img src="new website pic/Matcha Cake.png" alt="">
+    <div class="content">
+        <h3>Matcha Cake</h3>
+        <p>A soft, moist cake infused with the rich, earthy flavor of matcha. Perfectly sweet with a hint of bitterness, it pairs beautifully with any tea.</p>
+    </div>
+</a>
+<div id="modalMatchaCake" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalMatchaCake')">&times;</span>
+        <h2>Matcha Cake</h2>
+        <div class="size-options">
+            <div class="size-option"><label>Regular</label><span>₱35</span></div>
+        </div>
+    </div>
+</div>
+
+    </section>
+    
+    
+
+    
+
+    <!-- REVIEW -->
+    <section class="review" id="review">
+        <h1 class="heading">reviews <span>what people says</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="new website pic/Fritz McKenzie Hernandez.jpg" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Bro, eto yung coffee na 'pag gusto mo ng caffeine rush pero ayaw mo ng sweetness
+                    </p>
+                    <h3>Fritz McKenzie Hernandez</h3>
+                    <span>satisfied Customer</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="new website pic/Sace Kervin Dwyane.jpg" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Suprisingly good!! I ordered their coffee moca and ok siya! Creamy, strong coffee and ramdam mo yung chocolate taste. 
+                        </p>
+                    <h3>Sace Kervin Dwyane</h3>
+                    <span>Satisfied Customer</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="new website pic/Aljon Dimatulac.jpg" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Sobrang sarap kupal! HAHA sobrang solid men
+                        </p>
+                    <h3>Aljon Dimatulac</h3>
+                    <span>Satisfied Customer</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="new website pic/Andie Aloro.jpg" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p> Yummy!
+                        </p>
+                    <h3>Andie Aloro</h3>
+                    <span>Satisfied Customer</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <section class="book" id="book">
+        <form action="#" id="orderForm">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Number" class="box">
+            <textarea name="message" placeholder="Message" class="box" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>Thank you for ordering!</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+        
+    
+
+   
+    <section class="footer">
+        <div class="box-container">
+            
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#order"><i class="fas fa-arrow-right"></i> order</a>
+            </div>
+
+            
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> 09488404356</a>
+                <a href="#"><i class="fas fa-phone"></i> 09913148239</a>
+                <a href="#"><i class="fas fa-envelope" target="_blank"></i> Kantocoffee&tea@gmail.com</a>
+                <a href="https://web.facebook.com/profile.php?id=61566584130619" target="_blank"> <i class="fab fa-facebook-f"></i> Kanto coffee & Tea</a>
+                <a href="#"><i class="fab fa-instagram" target="_blank"></i> Kanto coffee & Tea</a>
+            </div>
+    </section>
+
+
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--JS File Link-->
+    <script src="newwebsitejs.js"></script>
+
+</body>
+
+</html>
